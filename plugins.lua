@@ -2,6 +2,7 @@ local mason = require "custom.overrides.mason"
 local treesitter = require "custom.overrides.treesitter"
 local telescope = require "custom.overrides.telescope"
 local nvimtree = require "custom.overrides.nvimtree"
+local indent_blankline = require "custom.overrides.indent_blankline"
 
 local plugins = {
   { "elkowar/yuck.vim", lazy = false },
@@ -20,6 +21,10 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     opts = nvimtree,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = indent_blankline,
   },
   {
     "neovim/nvim-lspconfig",
@@ -46,9 +51,7 @@ local plugins = {
   {
     "max397574/better-escape.nvim",
     event = "InsertEnter",
-    config = function()
-      require("better_escape").setup()
-    end,
+    opts = {},
   },
   {
     "mbbill/undotree",
@@ -66,6 +69,12 @@ local plugins = {
   {
     "folke/which-key.nvim",
     enabled = true,
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    opts = {},
   },
 }
 

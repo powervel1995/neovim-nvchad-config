@@ -3,10 +3,11 @@ local highlights = require "custom.highlights"
 ---@type ChadrcConfig
 local M = {}
 M.ui = {
-  theme = "gatekeeper",
-  theme_toggle = { "gatekeeper", "ayu_dark" },
+  theme = "bearded-arc",
+  theme_toggle = { "bearded-arc", "tokyodark" },
   statusline = {
-    theme = "vscode_colored",
+    theme = "minimal",
+    separator_style = "round",
   },
   hl_override = highlights.override,
   hl_add = highlights.add,

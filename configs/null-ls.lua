@@ -20,7 +20,7 @@ local opts = {
     formatting.clang_format,
     diagnostics.mypy,
     diagnostics.ruff,
-    diagnostics.eslint,
+    -- diagnostics.eslint,
   },
   on_attach = function(client, bufnr)
     if client.supports_method "textDocument/formatting" then
