@@ -10,6 +10,7 @@ M = {
       },
     },
   },
+  extensions_list = { "fzf" },
 }
 
 return M

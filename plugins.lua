@@ -59,12 +59,7 @@ local plugins = {
   },
   {
     "nvim-telescope/telescope-fzf-native.nvim",
-    -- NOTE: If you are having trouble with this installation,
-    --       refer to the README for telescope-fzf-native for more instructions.
     build = "make",
-    cond = function()
-      return vim.fn.executable "make" == 1
-    end,
   },
   {
     "folke/which-key.nvim",
@@ -72,10 +67,8 @@ local plugins = {
   },
   {
     "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     opts = {},
   },
 }
-
 return plugins

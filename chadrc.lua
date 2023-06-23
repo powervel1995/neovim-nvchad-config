@@ -16,6 +16,4 @@ M.ui = {
 M.plugins = "custom.plugins"
 M.mappings = require "custom.configs.mappings"
 
--- require("base46").toggle_transparency()
-
 return M
